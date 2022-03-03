@@ -1,0 +1,264 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+::root{
+--Blue: hsl(246, 80%, 60%);
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-self-care: hsl(43, 84%, 65%);
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+     background-color: hsl(226, 43%, 10%);
+    color: white;
+    
+}
+.container{
+    margin-top: 200px;
+  
+ 
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile{
+    width: 200px;
+    height: 350px;
+    background:hsl(235, 46%, 20%);
+    border-radius: 20px;
+    position: relative;
+    margin-top: -90px;
+    
+}
+.profile-top{
+    background:hsl(246, 80%, 60%) ;
+    border-radius: 20px;
+    height: 250px;
+    
+}
+.profile-top img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.profile-top p{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+.profile-top h1{
+    position: absolute;
+    top: 120px;
+    left: 40px;
+}
+.profile-bottom{
+    
+    position: absolute;
+    top: 260px;
+    left: 40px;
+}
+.profile-bottom button{
+    display: block;
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+    background: transparent;
+    margin: 5px 0;
+    border: none;
+}
+.reports{
+    margin-left: 10px;
+}
+.inner-1{
+    display: flex;
+    
+    margin: 10px;
+}
+.report-container{
+    display: block;
+    position: relative;
+}
+.reports-top{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 300px 300px;
+  grid-gap: 10px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  margin-top: 160px;
+  
+}
+.reports-below{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px 300px;
+  grid-gap: 10px;
+  position: relative;
+  padding: 10px;
+}
+.orange{
+   background-color: hsl(15, 100%, 70%); 
+   width: 150px;
+   height: 150px;
+   border-radius: 10px;
+}
+.orange img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+}
+.cyan{
+    background-color: hsl(195, 74%, 62%);
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.cyan  img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+}
+.pink{
+   background-color:  hsl(348, 100%, 68%);
+   width: 150px;
+   height: 150px;
+   border-radius: 10px;
+}
+.pink  img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+}
+.green{
+    background-color: hsl(145, 58%, 55%);
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.green  img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+}
+.purple{
+    background-color: hsl(264, 64%, 52%);
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.purple  img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+}
+.yellow{
+    background:hsl(43, 84%, 65%);  
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.yellow  img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+}
+.report-inner-container{
+position: absolute;
+width: 150px;
+height: 120px;
+border-radius: 10px;
+top: 31px;
+
+
+background:hsl(235, 46%, 20%);
+}
+.inner-1 img{
+    height: 5px;
+    width: 15px;
+   
+}
+.report-inner-container h1{
+    margin-left: 10px;
+    font-size: 35px;
+}
+.time{
+    margin-left: 10px;
+    color: hsl(235, 45%, 61%);
+}
+button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width:500px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile{
+        background:hsl(235, 46%, 20%);
+    }
+    .reports-top{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .reports-below{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .report-inner-container{
+        width: 150px;
+        height: 120px;
+    }
+    .orange{
+        margin-top: -150px;
+        margin-bottom: 100px;
+    }
+    .cyan{
+        margin-bottom: 100px;
+    }
+    .green{
+        margin-top: 130px;
+    }
+    .pink{
+        margin-bottom: 100px;
+    }
+    
+    
+}
+
